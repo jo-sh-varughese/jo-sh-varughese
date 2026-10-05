@@ -1,149 +1,51 @@
-# CollectiveOS-Bench
+<a href="https://johansv.netlify.app">
+  <img src="assets/slide.svg" width="100%" alt="A stained glass microscope slide labelled “Varughese, J. S.”. HER2 membrane staining develops across the tissue section." />
+</a>
 
-**CollectiveOS-Bench: A Benchmark Suite for Emergent Cooperation, Institutions, and Collective Intelligence in Multi-Agent Systems**
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/abstract-dark.svg" />
+  <img src="assets/abstract-light.svg" width="100%" alt="Johan S. Varughese. I study when machine learning can be trusted: privacy in federated learning, training-run integrity, LLM-judge bias, and interpretability under steering, tested on HER2 breast-cancer scoring for Kerala’s government medical colleges." />
+</picture>
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.9%2B-green.svg)](https://python.org)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange.svg)](https://pytorch.org)
+Find me at [johansv.netlify.app](https://johansv.netlify.app), on [ORCID](https://orcid.org/0009-0008-7393-6228) and [LinkedIn](https://linkedin.com/in/johan-s-varughese), or by [email](mailto:johan.varughesee@gmail.com).
 
----
+<br/>
 
-## Overview
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/program-dark.svg" />
+  <img src="assets/program-light.svg" width="100%" alt="Figure 1. Research program across a model’s lifecycle: data, training, evaluation, representation, inference, deployment." />
+</picture>
 
-CollectiveOS-Bench is a reproducible, research-grade benchmark for studying **emergent cooperation**, **decentralised coordination**, **institutional dynamics**, and **adaptive governance** in multi-agent systems.
+<br/><br/>
 
-Existing benchmarks largely focus on competitive settings or fully cooperative tasks with fixed rules. CollectiveOS-Bench fills the gap by introducing environments where institutional structure itself is a dynamic, emergent property of agent behaviour—and providing a principled metric suite to measure it.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/manuscripts-dark.svg" />
+  <img src="assets/manuscripts-light.svg" width="100%" alt="Manuscripts: The Real Cost of Anytime-Validity; Do LLM-Judge Biases Compose?; Manifold Alignment, Not Norm, Determines SAE Fidelity Under Steering; An Accounting Trap in Prototype-Based Federated Learning; Diagnosing the CIFAR-10 Gap in Byzantine-Robust DP-FL; Mass-Calibrated Repulsive Reverse-KL; Can You Trust a Benchmark Score if You Can’t Trust the Training Run?" />
+</picture>
 
----
+<br/><br/>
 
-## Environments
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/systems-dark.svg" />
+  <img src="assets/systems-light.svg" width="100%" alt="Systems in the field: BiomarkHER2, HER2 IHC track at TEA Lab, FedCardio, ProtoFL-Sec, ProtoShield-FL, NammadeVote." />
+</picture>
 
-| Environment | Core Dynamic | Key Challenge |
-|---|---|---|
-| **Commons** | Shared renewable resource pool | Avoid tragedy of the commons |
-| **Market** | Decentralised double-auction | Emergent price discovery, specialisation |
-| **Institution** ★ | Dynamic rule system with voting | Governance emergence, compliance, adaptation |
+The code for BiomarkHER2 is at [jo-sh-varughese/biomarkher2-ai](https://github.com/jo-sh-varughese/biomarkher2-ai).
 
-★ = Key novelty of this benchmark.
+<br/>
 
----
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/bench-dark.svg" />
+  <img src="assets/bench-light.svg" width="100%" alt="On the bench: building the HER2 IHC track at TEA Lab, deploying BiomarkHER2, leading IRIS and the IET MBCET Student Chapter, mentoring through THRIVE, reviewing for ICMLA 2026 and NeurIPS 2026 InterpScience, applying to graduate positions for Fall 2027." />
+</picture>
 
-## Novel Metrics
+<br/><br/>
 
-Beyond standard cooperation and social welfare metrics, CollectiveOS-Bench introduces:
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/methods-dark.svg" />
+  <img src="assets/methods-light.svg" width="100%" alt="Materials and methods: Python, PyTorch, TensorFlow, scikit-learn, NumPy, pandas, Matplotlib, Plotly, Rényi DP, SMPC, Byzantine-robust aggregation, sparse autoencoders, activation steering, Gymnasium, e-processes, bootstrap, mixed-effects regression, whole-slide imaging, React, Node, Express, MongoDB, Docker, AWS, Linux, Java, SQL, Bash." />
+</picture>
 
-- **Institutional Emergence Score (IES)** — quantifies whether agents collectively formed and maintained a functioning institution
-- **Collective Adaptation Rate (CAR)** — measures the rate and quality of democratic rule updates
-- **Coordination Efficiency Index (CEI)** — normalises performance between the Nash equilibrium and the social optimum
+<br/><br/>
 
----
-
-## Quick Start
-
-```bash
-git clone https://github.com/johanvarughese/collectiveos-bench
-cd collectiveos-bench
-pip install -r requirements.txt
-# or
-pip install -e .
-```
-
-**Run a single experiment:**
-```bash
-python -m experiments.runner --config configs/commons_ppo.yaml
-```
-
-**Reproduce all paper results:**
-```bash
-python reproducibility/reproduce_all.py
-# Quick smoke test:
-python reproducibility/reproduce_all.py --quick
-```
-
-**Generate plots:**
-```bash
-python plots/visualize.py
-```
-
-**Launch REST API:**
-```bash
-uvicorn api.app:app --reload --port 8000
-# POST http://localhost:8000/experiments/run
-# GET  http://localhost:8000/experiments/{name}
-```
-
----
-
-## Project Structure
-
-```
-collectiveos-bench/
- ├── environments/          # Commons, Market, Institution gym envs
- ├── agents/                # BaseAgent, PPOAgent, baselines
- ├── metrics/               # Standard + novel metric implementations
- ├── experiments/           # Config-driven experiment runner + logger
- ├── configs/               # YAML experiment configs (reproducible)
- ├── results/               # Output JSON — auto-generated
- ├── plots/                 # Matplotlib visualisation scripts
- ├── reproducibility/       # Fixed-seed scripts to reproduce paper results
- ├── api/                   # FastAPI REST interface
- ├── docs/                  # Extended documentation
- └── paper/                 # NeurIPS-style paper draft (LaTeX + PDF)
-```
-
----
-
-## Baselines
-
-| Baseline | Description |
-|---|---|
-| `random` | Uniform random actions — lower bound |
-| `greedy` | Always maximise extraction — Nash defection |
-| `cooperative` | Fixed cooperative policy — upper bound reference |
-| `ppo` | Independent PPO agents (no centralised training) |
-
----
-
-## Reproducibility
-
-All experiments use fixed NumPy, PyTorch, and Python random seeds.  
-Configs are versioned YAML files in `configs/`.  
-The `reproducibility/reproduce_all.py` script regenerates all paper tables and figures end-to-end.
-
----
-
-## Citation
-
-If you use CollectiveOS-Bench in your research, please cite:
-
-```bibtex
-@misc{varughese2024collectiveos,
-  title     = {CollectiveOS-Bench: A Benchmark Suite for Emergent Cooperation,
-               Institutions, and Collective Intelligence in Multi-Agent Systems},
-  author    = {Varughese, Johan},
-  year      = {2024},
-  url       = {https://github.com/johanvarughese/collectiveos-bench},
-  note      = {Original benchmark design, environments, and metrics
-               attributed to Johan Varughese. Open-source under Apache 2.0.}
-}
-```
-
-Academic use without citation is a violation of the terms of this repository.
-
----
-
-## License
-
-Copyright © 2024 Johan Varughese.
-
-Licensed under the [Apache License 2.0](LICENSE).
-
-The original benchmark design, environment architectures, metric formulations  
-(IES, CAR, CEI), and experimental protocol are the intellectual contribution  
-of Johan Varughese. Derivative works must retain attribution.
-
----
-
-## Contributing
-
-Issues and pull requests are welcome. Please open an issue before submitting large changes.
+Open to research collaborations on privacy-preserving ML, training integrity, interpretability and clinical AI, and to graduate positions starting Fall 2027. [Write to me](mailto:johan.varughesee@gmail.com).
