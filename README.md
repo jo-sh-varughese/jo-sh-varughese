@@ -1,10 +1,13 @@
 <a href="https://johansv.netlify.app">
-  <img src="assets/slide.svg" width="100%" alt="A stained glass microscope slide labelled “Varughese, J. S.”. HER2 membrane staining develops across the tissue section." />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/plate-dark.svg" />
+  <img src="assets/plate-light.svg" width="100%" alt="Johan S. Varughese, machine-learning researcher. Plate I shows eight research areas in trustworthy machine learning: federated privacy, robust aggregation, training integrity, LLM-as-judge evaluation, interpretability, variational inference, health signals and computational pathology." />
+</picture>
 </a>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/abstract-dark.svg" />
-  <img src="assets/abstract-light.svg" width="100%" alt="Johan S. Varughese. I study when machine learning can be trusted: privacy in federated learning, training-run integrity, LLM-judge bias, and interpretability under steering, tested on HER2 breast-cancer scoring for Kerala’s government medical colleges." />
+  <img src="assets/abstract-light.svg" width="100%" alt="Abstract. I work on where trust in machine learning breaks, across six areas: privacy in federated learning, robustness to poisoned clients, training-run integrity, LLM-as-judge bias, interpretability under activation steering, and mode-seeking variational inference. I take those methods into ECG arrhythmia detection, HER2 breast-cancer pathology and district election operations." />
 </picture>
 
 Find me at [johansv.netlify.app](https://johansv.netlify.app), on [ORCID](https://orcid.org/0009-0008-7393-6228) and [LinkedIn](https://linkedin.com/in/johan-s-varughese), or by [email](mailto:johan.varughesee@gmail.com).
@@ -20,14 +23,14 @@ Find me at [johansv.netlify.app](https://johansv.netlify.app), on [ORCID](https:
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/manuscripts-dark.svg" />
-  <img src="assets/manuscripts-light.svg" width="100%" alt="Manuscripts: The Real Cost of Anytime-Validity; Do LLM-Judge Biases Compose?; Manifold Alignment, Not Norm, Determines SAE Fidelity Under Steering; An Accounting Trap in Prototype-Based Federated Learning; Diagnosing the CIFAR-10 Gap in Byzantine-Robust DP-FL; Mass-Calibrated Repulsive Reverse-KL; Can You Trust a Benchmark Score if You Can’t Trust the Training Run?" />
+  <img src="assets/manuscripts-light.svg" width="100%" alt="Manuscripts across six areas: The Real Cost of Anytime-Validity (training integrity); Do LLM-Judge Biases Compose? (LLM evaluation); Manifold Alignment, Not Norm, Determines SAE Fidelity Under Steering (interpretability); An Accounting Trap in Prototype-Based Federated Learning (federated privacy); Diagnosing the CIFAR-10 Gap in Byzantine-Robust DP-FL (robust aggregation); Mass-Calibrated Repulsive Reverse-KL (variational inference); Can You Trust a Benchmark Score if You Can’t Trust the Training Run? (training integrity)." />
 </picture>
 
 <br/><br/>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/systems-dark.svg" />
-  <img src="assets/systems-light.svg" width="100%" alt="Systems in the field: BiomarkHER2, HER2 IHC track at TEA Lab, FedCardio, ProtoFL-Sec, ProtoShield-FL, NammadeVote." />
+  <img src="assets/systems-light.svg" width="100%" alt="Systems in the field: FedCardio (federated health AI), ProtoFL-Sec (privacy attacks), ProtoShield-FL (secure computation), BiomarkHER2 (computational pathology), NammadeVote (civic AI)." />
 </picture>
 
 The code for BiomarkHER2 is at [jo-sh-varughese/biomarkher2-ai](https://github.com/jo-sh-varughese/biomarkher2-ai).
@@ -36,7 +39,7 @@ The code for BiomarkHER2 is at [jo-sh-varughese/biomarkher2-ai](https://github.c
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/bench-dark.svg" />
-  <img src="assets/bench-light.svg" width="100%" alt="On the bench: building the HER2 IHC track at TEA Lab, deploying BiomarkHER2, leading IRIS and the IET MBCET Student Chapter, mentoring through THRIVE, reviewing for ICMLA 2026 and NeurIPS 2026 InterpScience, applying to graduate positions for Fall 2027." />
+  <img src="assets/bench-light.svg" width="100%" alt="On the bench: writing up manuscripts on privacy accounting, robust DP-FL, variational inference and training audits; building the HER2 IHC track at TEA Lab and deploying BiomarkHER2; leading IRIS and the IET MBCET Student Chapter; mentoring through THRIVE; reviewing for ICMLA 2026 and NeurIPS 2026 InterpScience; applying to graduate positions for Fall 2027." />
 </picture>
 
 <br/><br/>
@@ -48,4 +51,4 @@ The code for BiomarkHER2 is at [jo-sh-varughese/biomarkher2-ai](https://github.c
 
 <br/><br/>
 
-Open to research collaborations on privacy-preserving ML, training integrity, interpretability and clinical AI, and to graduate positions starting Fall 2027. [Write to me](mailto:johan.varughesee@gmail.com).
+Open to research collaborations on privacy-preserving ML, robust and federated learning, training integrity, LLM evaluation, interpretability and clinical AI, and to graduate positions starting Fall 2027. [Write to me](mailto:johan.varughesee@gmail.com).
