@@ -6,6 +6,11 @@
 </a>
 
 <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/highlights-dark.svg" />
+  <img src="assets/highlights-light.svg" width="100%" alt="Highlights. 7 manuscripts across six areas of machine learning, three at NeurIPS 2026 workshops. 98.7% accuracy for FedCardio on MIT-BIH at ε = 3.1. 100% of the steering effect kept by Certified Delta Attribution, against about 30% for projection fixes. 6 of 7 open LLM judges show compounding position and verbosity biases. 13 members in IRIS, the research lab I founded. Every experiment ran on 1 personal CPU." />
+</picture>
+
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/abstract-dark.svg" />
   <img src="assets/abstract-light.svg" width="100%" alt="Abstract. I work on where trust in machine learning breaks, across six areas: privacy in federated learning, robustness to poisoned clients, training-run integrity, LLM-as-judge bias, interpretability under activation steering, and mode-seeking variational inference. I take those methods into ECG arrhythmia detection, HER2 breast-cancer pathology and district election operations." />
 </picture>
